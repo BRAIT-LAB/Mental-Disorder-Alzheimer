@@ -1,5 +1,5 @@
 clear ;clc;
-path = ['D:\Data_analysis\EEG_data\Work\test'];         %和上个代码路径一样，复制过来就行
+path = ['D:\Data_analysis\EEG_data\Work\test'];         
 inpath=[path,'\Pre'];
 cd(inpath);
 AllFile = dir('**/*.*set');
@@ -7,7 +7,7 @@ for i=1:length(AllFile)
 	file{i,1}=AllFile(i).name;
 end
 Cond={'1','2'};                                         %实验条件（marker）
-site=25;                                                %波形图电极点序号，目前你的数据25是Cz       
+site=25;                                                %波形图电极点序号      
 
 %% plot the waveforms for different conditions
 inpath=[path,'\Pre'];
